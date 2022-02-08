@@ -73,9 +73,9 @@ function clearTile() {
 function completeRow() {
   if (currentRow.every((tile) => tile.letter)) {
     const guess = currentRow.map((tile) => tile.letter).join('')
-    if (guess !== answer) {
+    if (!allWords.includes(guess) && guess !== answer) {
       shake()
-      showMessage(`❌ hehehe not the word`)
+      showMessage(`❌ hehehe not one of the allowed words`)
       return
     }
 
