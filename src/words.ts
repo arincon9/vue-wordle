@@ -2360,7 +2360,7 @@ const allowedGuesses = [
   'rower',
   'artsy',
   'rural',
-  'shave'
+  'shave',
   'aahed',
   'aalii',
   'aargh',
